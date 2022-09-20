@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Managers</title>
+    <script src="addBudget.js"></script>
+    <style>
+        h1{
+         color: blue;
+         text-decoration-line: underline;
+         text-decoration-style: line;
+         text-decoration-thickness: 5%;
+        }
+      .center {
+        text-align: center;
+        border: 3px solid rgba(16, 15, 15, 0.952);
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -165px;
+        margin-left: -175px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="center">
+        <form id="form">
+          <h1>Add Details</h1>
+          <br />
+          <label style="color: rgb(79, 7, 120);
+          font-weight: 500;
+          font-size: larger;"
+          for="clientName">Client Name :</label>
+          <input 
+          
+          
+          type="text" id="clientName" 
+          style="color: rgb(10, 10, 10);
+          font-weight: 500;
+          font-size: larger;" /><br />
+          <br />
+          <br />
+          <label for="projectName"style="color: rgb(79, 7, 120);
+          font-weight: 500;
+          font-size: larger;"
+            >Project Name :
+          </label>
+          <input type="text" id="projectName" style="color: rgb(10, 9, 10);
+          font-weight: 500;
+          font-size: larger;" /><br />
+          <br />
+          <br />
+          <label for="budget" style="color: rgb(79, 7, 120);
+          font-weight: 500;
+          font-size: larger;">Budget : </label>
+          <input type="text" id="budget" style="font-size: 15px" /><br />
+          <br />
+        </br>
+          <input
+            style="margin-right: 60px; font-size: 15px"
+            type="button"
+            value="Add"
+            onclick="addBudget()"
+          />
+          <input
+            style="margin-left: 60px; font-size: 15px"
+            type="button"
+            onclick="myFunction()"
+            value="Clear"
+          />
+          <script>
+            function myFunction() {
+              document.getElementById("form").reset();
+            }
+          </script>
+          <br />
+        </form>
+        &nbsp;&nbsp;<a href="index.html" style="font-size: 20px">Back</a>
+        <br />
+        <div id="out"></div>
+      </div>
+    </center>
+  </body>
+</html>
